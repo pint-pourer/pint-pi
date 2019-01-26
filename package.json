@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "prettier": "^1.16.1",
     "pusher-js": "^4.3.1"
   }
 }

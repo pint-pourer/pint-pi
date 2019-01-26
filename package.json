@@ -1,0 +1,10 @@
+{
+  "name": "pint-pi",
+  "version": "1.0.0",
+  "description": "Raspberry Pi pint pourer",
+  "main": "index.js",
+  "repository": "https://github.com/pint-pourer/pint-pi.git",
+  "author": "Zeshan Amjad <zeshan@zesh.me>",
+  "license": "MIT",
+  "private": false
+}

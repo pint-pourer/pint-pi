@@ -6,5 +6,8 @@
   "repository": "https://github.com/pint-pourer/pint-pi.git",
   "author": "Zeshan Amjad <zeshan@zesh.me>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "pusher-js": "^4.3.1"
+  }
 }

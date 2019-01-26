@@ -1,12 +1,27 @@
 {
   "name": "pint-pi",
   "version": "1.0.0",
-  "description": "Raspberry Pi pint pourer",
-  "main": "index.js",
+  "description": "Raspberry Pi Pint Pourer",
+  "main": "src/index.js",
   "repository": "https://github.com/pint-pourer/pint-pi.git",
   "author": "Zeshan Amjad <zeshan@zesh.me>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "lint": "eslint 'src/**/*.js'",
+    "prettify": "prettier --write '{./src/**/*.scss,./src/**/*.json,./src/**/*.js,./src/**/*.yml,./src/**/*.yaml}'",
+    "validate": "npm-run-all lint prettify"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn validate"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-node": "^4.0.0",
+    "husky": "^1.3.1"
+  },
   "dependencies": {
     "prettier": "^1.16.1",
     "pusher-js": "^4.3.1"

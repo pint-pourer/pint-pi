@@ -11,7 +11,7 @@ export const initWorker = (rsmq, processMessage) => {
 
 export const processPint = (msg, next, id) => {
   console.log("Pouring your pint!" + id);
-  if (shell.exec("./src/sleep.sh").code === 0) {
+  if (shell.exec("python3 ./src/python/pour.py").code === 0) {
     next();
   } else {
     console.error("Pouring failed!");
